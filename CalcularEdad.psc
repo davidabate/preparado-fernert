@@ -3,30 +3,12 @@
 Algoritmo CalcularEdad
 	
 	Definir name como texto;
-	Definir year, born, thisYear, decision Como Entero;
+	Definir year, age Como Entero;
 	
 	name <- "micho";
-	thisYear <- 2025;
-	Escribir "Indique el año de nacimiento"
-	leer born;
-	age <- thisYear - born
+	year <- 2025;
+	age <- 1999;
 	
-	Escribir "¿cumpliste años en ", thisYear, " ?"
-	Escribir "1. si"
-	Escribir "2. no"
-	leer decision
-	
-	
-	Si decision = 1 Entonces
-		escribir name, " tiene " age, " años"
-	SiNo
-		Si decision = 2 Entonces
-			escribir name, " tiene " (age-1), " años"
-		SiNo
-			Escribir "Opcion inválida"
-		Fin Si
-		
-	Fin Si
-	
+	Escribir "la edad de ", name ," es: " year - age;
 	
 FinAlgoritmo
