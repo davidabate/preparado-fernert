@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cómo Preparar Fernet - Aguante Taiereee</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>🧉 El Algoritmo del Fernet el verdadero</h1>
+    <p><strong>AGUANTE TAIEREEEEEEEEEEE!!!</strong></p>
+  </header>
+
+  <section>
+    <h2>🍹 Ingredientes son</h2>
+    <ul>
+      <li>1. Jarra</li>
+      <li>2. Hielo</li>
+      <li>3. Coca-Cola</li>
+      <li>4. Fernet (Branca, si sos bien culiau)</li>
+    </ul>
+
+    <h2>🧠 Instrucciones paso a paso</h2>
+
+    <div class="paso">Paso 1: Colocar la jarra en la mesa</div>
+    <div class="paso">Paso 2: Poner hielo hasta llenar 3/4 de la jarra</div>
+
+    <div class="paso">
+      <strong>¿Estás en Córdoba?</strong><br>
+      Elegí tu respuesta:<br><br>
+      <button onclick="mostrarPasos(1)">Sí</button>
+      <button onclick="mostrarPasos(2)">No</button>
+    </div>
+
+    <div id="resultado"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fernet Corporation | Hecho con amor y soda en Córdoba 💚</p>
+  </footer>
+
+  <script>
+    function mostrarPasos(respuesta) {
+      const resultado = document.getElementById("resultado");
+      if (respuesta === 1) {
+        resultado.innerHTML = `
+          <div class="paso cordoba">QUE HACES CULIADASOOOO!!! HAGAMOS UN ASADO Y TOMEMO UN FERNÉ</div>
+          <div class="paso">Paso 3: Poner un 40% de fernet</div>
+          <div class="paso">Paso 4: Poner un 60% de Coca-Cola</div>
+          <div class="paso">Paso 5: Disfrutar 🍻</div>
+          <div class="paso">Paso 6: Reproducir "Soy Cordobés" de Rodrigo 🎶</div>
+        `;
+      } else if (respuesta === 2) {
+        resultado.innerHTML = `
+          <div class="paso cordoba">Que culiao que sos</div>
+          <div class="paso">Paso 3: Poner un 30% de fernet</div>
+          <div class="paso">Paso 4: Poner un 70% de Coca-Cola</div>
+          <div class="paso">Paso 5: Disfrutar 🍻</div>
+          <div class="paso">Paso 6: Reproducir "Soy Cordobés" de Rodrigo 🎶</div>
+        `;
+      } else {
+        resultado.innerHTML = `<div class="paso">Opción incorrecta, pedazo de culiao</div>`;
+      }
+    }
+  </script>
+
+</body>
+</html>
